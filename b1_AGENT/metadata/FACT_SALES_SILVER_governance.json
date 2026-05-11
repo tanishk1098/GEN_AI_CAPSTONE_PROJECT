@@ -1,0 +1,11 @@
+{
+    "lineage": {
+        "source_tables": [
+            "clean_FACT_SALES_SILVER",
+            "FACT_SALES_SILVER"
+        ],
+        "target_table": "clean_FACT_SALES_SILVER",
+        "columns": []
+    },
+    "pii_classification": []
+}

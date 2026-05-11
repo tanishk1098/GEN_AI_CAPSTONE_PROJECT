@@ -1,0 +1,11 @@
+{
+    "lineage": {
+        "source_tables": [
+            "clean_RAW_SALES_BRONZE",
+            "RAW_SALES_BRONZE"
+        ],
+        "target_table": "clean_RAW_SALES_BRONZE",
+        "columns": []
+    },
+    "pii_classification": []
+}

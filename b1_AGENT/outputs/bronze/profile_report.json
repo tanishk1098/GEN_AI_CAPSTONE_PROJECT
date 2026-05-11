@@ -1,0 +1,67 @@
+{
+    "total_rows": 99443,
+    "total_columns": 5,
+    "duplicate_rows": 0,
+    "columns": {
+        "customer_id": {
+            "datatype": "str",
+            "null_count": 0,
+            "unique_values": 99441,
+            "sample_values": [
+                "06b8999e2fba1a1fbc88172c00ba8bc7",
+                "18955e83d337fd6b2def6b18a428ac77",
+                "4e7b3e00288586ebd08712fdd0374a03",
+                "4e7b3e00288586ebd08712fdd0374a03",
+                "4e7b3e00288586ebd08712fdd0374a03"
+            ]
+        },
+        "customer_unique_id": {
+            "datatype": "str",
+            "null_count": 0,
+            "unique_values": 96096,
+            "sample_values": [
+                "861eff4711a542e4b93843c6dd7febb0",
+                "290c77bc529b7ac935b93aa66c333dc3",
+                "060e732b5b29e8181a18229c7b0b2b5e",
+                "060e732b5b29e8181a18229c7b0b2b5e",
+                "060e732b5b29e8181a18229c7b0b2b5e"
+            ]
+        },
+        "customer_zip_code_prefix": {
+            "datatype": "int64",
+            "null_count": 0,
+            "unique_values": 14994,
+            "sample_values": [
+                "14409",
+                "9790",
+                "1151",
+                "1151",
+                "1151"
+            ]
+        },
+        "customer_city": {
+            "datatype": "str",
+            "null_count": 1,
+            "unique_values": 4120,
+            "sample_values": [
+                "franca",
+                "sao bernardo do campo",
+                "sao paulo",
+                "Campinas",
+                "mogi das cruzes"
+            ]
+        },
+        "customer_state": {
+            "datatype": "str",
+            "null_count": 0,
+            "unique_values": 29,
+            "sample_values": [
+                "SP",
+                "SP",
+                "SP",
+                "SAOPAULO",
+                "S"
+            ]
+        }
+    }
+}

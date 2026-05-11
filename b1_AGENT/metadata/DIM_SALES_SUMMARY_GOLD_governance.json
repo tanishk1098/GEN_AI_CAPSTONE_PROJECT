@@ -1,0 +1,11 @@
+{
+    "lineage": {
+        "source_tables": [
+            "DIM_SALES_SUMMARY_GOLD",
+            "clean_DIM_SALES_SUMMARY_GOLD"
+        ],
+        "target_table": "clean_DIM_SALES_SUMMARY_GOLD",
+        "columns": []
+    },
+    "pii_classification": []
+}

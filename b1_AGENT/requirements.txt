@@ -1,0 +1,11 @@
+langchain
+langgraph
+langchain-groq
+groq
+pandas
+streamlit
+python-dotenv
+ydata-profiling
+snowflake-connector-python
+snowflake-sqlalchemy
+sqlglot

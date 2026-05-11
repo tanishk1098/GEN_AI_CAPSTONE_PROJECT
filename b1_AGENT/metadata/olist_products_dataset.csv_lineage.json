@@ -1,0 +1,8 @@
+{
+    "dataset": "olist_products_dataset.csv",
+    "steps": [
+        "Profiler Agent Completed",
+        "Validation Agent Completed",
+        "Self-Healing Agent Completed"
+    ]
+}

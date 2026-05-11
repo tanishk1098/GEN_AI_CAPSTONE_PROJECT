@@ -1,0 +1,15 @@
+{
+    "source": {
+        "database": "SNOWFLAKE",
+        "table": "RAW_SALES_BRONZE",
+        "layer": "BRONZE"
+    },
+    "target": {
+        "layer": "SILVER"
+    },
+    "steps": [
+        "Profiler Agent Completed",
+        "Validation Agent Completed",
+        "Self-Healing Agent Completed"
+    ]
+}
