@@ -1,0 +1,1398 @@
+[
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "@data_stage/sales_data.csv"
+      ],
+      "target_tables": [],
+      "column_mapping": {}
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        ""
+      ],
+      "column_mapping": {
+        "CAST(order_id AS INT)": "CAST(order_id AS INT)",
+        "CAST(customer_id AS INT)": "CAST(customer_id AS INT)",
+        "product_category": "product_category",
+        "CAST(amount AS DOUBLE)": "CAST(amount AS DOUBLE)",
+        "CAST(order_date AS DATE)": "CAST(order_date AS DATE)",
+        "COALESCE(status, 'Unknown')": "COALESCE(status, 'Unknown')",
+        "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END": "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "DIM_SALES_SUMMARY_GOLD",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        ""
+      ],
+      "column_mapping": {
+        "product_category": "product_category",
+        "SUM(total_amount) AS total_revenue": "SUM(total_amount) AS total_revenue",
+        "AVG(total_amount) AS avg_order_value": "AVG(total_amount) AS avg_order_value",
+        "COUNT(order_id) AS order_count": "COUNT(order_id) AS order_count",
+        "CURRENT_TIMESTAMP()": "CURRENT_TIMESTAMP()"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "@data_stage/sales_data.csv"
+      ],
+      "target_tables": [],
+      "column_mapping": {}
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        ""
+      ],
+      "column_mapping": {
+        "CAST(order_id AS INT)": "CAST(order_id AS INT)",
+        "CAST(customer_id AS INT)": "CAST(customer_id AS INT)",
+        "product_category": "product_category",
+        "CAST(amount AS DOUBLE)": "CAST(amount AS DOUBLE)",
+        "CAST(order_date AS DATE)": "CAST(order_date AS DATE)",
+        "COALESCE(status, 'Unknown')": "COALESCE(status, 'Unknown')",
+        "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END": "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "DIM_SALES_SUMMARY_GOLD",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        ""
+      ],
+      "column_mapping": {
+        "product_category": "product_category",
+        "SUM(total_amount) AS total_revenue": "SUM(total_amount) AS total_revenue",
+        "AVG(total_amount) AS avg_order_value": "AVG(total_amount) AS avg_order_value",
+        "COUNT(order_id) AS order_count": "COUNT(order_id) AS order_count",
+        "CURRENT_TIMESTAMP()": "CURRENT_TIMESTAMP()"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "@data_stage/sales_data.csv"
+      ],
+      "target_tables": [],
+      "column_mapping": {}
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        ""
+      ],
+      "column_mapping": {
+        "CAST(order_id AS INT)": "CAST(order_id AS INT)",
+        "CAST(customer_id AS INT)": "CAST(customer_id AS INT)",
+        "product_category": "product_category",
+        "CAST(amount AS DOUBLE)": "CAST(amount AS DOUBLE)",
+        "CAST(order_date AS DATE)": "CAST(order_date AS DATE)",
+        "COALESCE(status, 'Unknown')": "COALESCE(status, 'Unknown')",
+        "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END": "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "DIM_SALES_SUMMARY_GOLD",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        ""
+      ],
+      "column_mapping": {
+        "product_category": "product_category",
+        "SUM(total_amount) AS total_revenue": "SUM(total_amount) AS total_revenue",
+        "AVG(total_amount) AS avg_order_value": "AVG(total_amount) AS avg_order_value",
+        "COUNT(order_id) AS order_count": "COUNT(order_id) AS order_count",
+        "CURRENT_TIMESTAMP()": "CURRENT_TIMESTAMP()"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "@data_stage/sales_data.csv"
+      ],
+      "target_tables": [],
+      "column_mapping": {}
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        ""
+      ],
+      "column_mapping": {
+        "CAST(order_id AS INT)": "CAST(order_id AS INT)",
+        "CAST(customer_id AS INT)": "CAST(customer_id AS INT)",
+        "product_category": "product_category",
+        "CAST(amount AS DOUBLE)": "CAST(amount AS DOUBLE)",
+        "CAST(order_date AS DATE)": "CAST(order_date AS DATE)",
+        "COALESCE(status, 'Unknown')": "COALESCE(status, 'Unknown')",
+        "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END": "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "DIM_SALES_SUMMARY_GOLD",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        ""
+      ],
+      "column_mapping": {
+        "product_category": "product_category",
+        "SUM(total_amount) AS total_revenue": "SUM(total_amount) AS total_revenue",
+        "AVG(total_amount) AS avg_order_value": "AVG(total_amount) AS avg_order_value",
+        "COUNT(order_id) AS order_count": "COUNT(order_id) AS order_count",
+        "CURRENT_TIMESTAMP()": "CURRENT_TIMESTAMP()"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "@data_stage/sales_data.csv"
+      ],
+      "target_tables": [],
+      "column_mapping": {}
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "FACT_SALES_SILVER",
+        "RAW_SALES_BRONZE"
+      ],
+      "target_tables": [
+        ""
+      ],
+      "column_mapping": {
+        "CAST(order_id AS INT)": "CAST(order_id AS INT)",
+        "CAST(customer_id AS INT)": "CAST(customer_id AS INT)",
+        "product_category": "product_category",
+        "CAST(amount AS DOUBLE)": "CAST(amount AS DOUBLE)",
+        "CAST(order_date AS DATE)": "CAST(order_date AS DATE)",
+        "COALESCE(status, 'Unknown')": "COALESCE(status, 'Unknown')",
+        "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END": "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "FACT_SALES_SILVER",
+        "DIM_SALES_SUMMARY_GOLD"
+      ],
+      "target_tables": [
+        ""
+      ],
+      "column_mapping": {
+        "product_category": "product_category",
+        "SUM(total_amount) AS total_revenue": "SUM(total_amount) AS total_revenue",
+        "AVG(total_amount) AS avg_order_value": "AVG(total_amount) AS avg_order_value",
+        "COUNT(order_id) AS order_count": "COUNT(order_id) AS order_count",
+        "CURRENT_TIMESTAMP()": "CURRENT_TIMESTAMP()"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "@data_stage/sales_data.csv"
+      ],
+      "target_tables": [],
+      "column_mapping": {}
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "@data_stage/sales_data.csv"
+      ],
+      "target_tables": [],
+      "column_mapping": {}
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        ""
+      ],
+      "column_mapping": {
+        "CAST(order_id AS INT)": "CAST(order_id AS INT)",
+        "CAST(customer_id AS INT)": "CAST(customer_id AS INT)",
+        "product_category": "product_category",
+        "CAST(amount AS DOUBLE)": "CAST(amount AS DOUBLE)",
+        "CAST(order_date AS DATE)": "CAST(order_date AS DATE)",
+        "COALESCE(status, 'Unknown')": "COALESCE(status, 'Unknown')",
+        "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END": "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "DIM_SALES_SUMMARY_GOLD",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        ""
+      ],
+      "column_mapping": {
+        "product_category": "product_category",
+        "SUM(total_amount) AS total_revenue": "SUM(total_amount) AS total_revenue",
+        "AVG(total_amount) AS avg_order_value": "AVG(total_amount) AS avg_order_value",
+        "COUNT(order_id) AS order_count": "COUNT(order_id) AS order_count",
+        "CURRENT_TIMESTAMP()": "CURRENT_TIMESTAMP()"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "@data_stage/sales_data.csv"
+      ],
+      "target_tables": [],
+      "column_mapping": {}
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "FACT_SALES_SILVER",
+        "RAW_SALES_BRONZE"
+      ],
+      "target_tables": [
+        ""
+      ],
+      "column_mapping": {
+        "CAST(order_id AS INT)": "CAST(order_id AS INT)",
+        "CAST(customer_id AS INT)": "CAST(customer_id AS INT)",
+        "product_category": "product_category",
+        "CAST(amount AS DOUBLE)": "CAST(amount AS DOUBLE)",
+        "CAST(order_date AS DATE)": "CAST(order_date AS DATE)",
+        "COALESCE(status, 'Unknown')": "COALESCE(status, 'Unknown')",
+        "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END": "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "FACT_SALES_SILVER",
+        "DIM_SALES_SUMMARY_GOLD"
+      ],
+      "target_tables": [
+        ""
+      ],
+      "column_mapping": {
+        "product_category": "product_category",
+        "SUM(total_amount) AS total_revenue": "SUM(total_amount) AS total_revenue",
+        "AVG(total_amount) AS avg_order_value": "AVG(total_amount) AS avg_order_value",
+        "COUNT(order_id) AS order_count": "COUNT(order_id) AS order_count",
+        "CURRENT_TIMESTAMP()": "CURRENT_TIMESTAMP()"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "@data_stage/sales_data.csv",
+        "RAW_SALES_BRONZE"
+      ],
+      "target_tables": [],
+      "column_mapping": {}
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "FACT_SALES_SILVER",
+        "RAW_SALES_BRONZE"
+      ],
+      "target_tables": [
+        ""
+      ],
+      "column_mapping": {
+        "CAST(order_id AS INT)": "CAST(order_id AS INT)",
+        "CAST(customer_id AS INT)": "CAST(customer_id AS INT)",
+        "product_category": "product_category",
+        "CAST(amount AS DOUBLE)": "CAST(amount AS DOUBLE)",
+        "CAST(order_date AS DATE)": "CAST(order_date AS DATE)",
+        "COALESCE(status, 'Unknown')": "COALESCE(status, 'Unknown')",
+        "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END": "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "DIM_SALES_SUMMARY_GOLD",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        ""
+      ],
+      "column_mapping": {
+        "product_category": "product_category",
+        "SUM(total_amount) AS total_revenue": "SUM(total_amount) AS total_revenue",
+        "AVG(total_amount) AS avg_order_value": "AVG(total_amount) AS avg_order_value",
+        "COUNT(order_id) AS order_count": "COUNT(order_id) AS order_count",
+        "CURRENT_TIMESTAMP()": "CURRENT_TIMESTAMP()"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "@data_stage/sales_data.csv",
+        "RAW_SALES_BRONZE"
+      ],
+      "target_tables": [],
+      "column_mapping": {}
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "FACT_SALES_SILVER",
+        "RAW_SALES_BRONZE"
+      ],
+      "target_tables": [
+        ""
+      ],
+      "column_mapping": {
+        "CAST(order_id AS INT)": "CAST(order_id AS INT)",
+        "CAST(customer_id AS INT)": "CAST(customer_id AS INT)",
+        "product_category": "product_category",
+        "CAST(amount AS DOUBLE)": "CAST(amount AS DOUBLE)",
+        "CAST(order_date AS DATE)": "CAST(order_date AS DATE)",
+        "COALESCE(status, 'Unknown')": "COALESCE(status, 'Unknown')",
+        "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END": "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "DIM_SALES_SUMMARY_GOLD",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        ""
+      ],
+      "column_mapping": {
+        "product_category": "product_category",
+        "SUM(total_amount) AS total_revenue": "SUM(total_amount) AS total_revenue",
+        "AVG(total_amount) AS avg_order_value": "AVG(total_amount) AS avg_order_value",
+        "COUNT(order_id) AS order_count": "COUNT(order_id) AS order_count",
+        "CURRENT_TIMESTAMP()": "CURRENT_TIMESTAMP()"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "@data_stage/sales_data.csv"
+      ],
+      "target_tables": [],
+      "column_mapping": {}
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        ""
+      ],
+      "column_mapping": {
+        "CAST(order_id AS INT)": "CAST(order_id AS INT)",
+        "CAST(customer_id AS INT)": "CAST(customer_id AS INT)",
+        "product_category": "product_category",
+        "CAST(amount AS DOUBLE)": "CAST(amount AS DOUBLE)",
+        "CAST(order_date AS DATE)": "CAST(order_date AS DATE)",
+        "COALESCE(status, 'Unknown')": "COALESCE(status, 'Unknown')",
+        "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END": "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "DIM_SALES_SUMMARY_GOLD",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        ""
+      ],
+      "column_mapping": {
+        "product_category": "product_category",
+        "SUM(total_amount) AS total_revenue": "SUM(total_amount) AS total_revenue",
+        "AVG(total_amount) AS avg_order_value": "AVG(total_amount) AS avg_order_value",
+        "COUNT(order_id) AS order_count": "COUNT(order_id) AS order_count",
+        "CURRENT_TIMESTAMP()": "CURRENT_TIMESTAMP()"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "@data_stage/sales_data.csv"
+      ],
+      "target_tables": [],
+      "column_mapping": {}
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "@data_stage/sales_data.csv"
+      ],
+      "target_tables": [],
+      "column_mapping": {}
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "@data_stage/sales_data.csv"
+      ],
+      "target_tables": [],
+      "column_mapping": {}
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "@data_stage/sales_data.csv"
+      ],
+      "target_tables": [],
+      "column_mapping": {}
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "@data_stage/sales_data.csv"
+      ],
+      "target_tables": [],
+      "column_mapping": {}
+    },
+    "pii_columns": [],
+    "tags": [
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "@data_stage/sales_data.csv"
+      ],
+      "target_tables": [
+        "RAW_SALES_BRONZE"
+      ],
+      "column_mapping": {
+        "order_id": "order_id",
+        "customer_id": "customer_id",
+        "customer_email": "customer_email",
+        "customer_phone": "customer_phone",
+        "customer_name": "customer_name",
+        "product_category": "product_category",
+        "amount": "amount",
+        "order_date": "order_date",
+        "status": "status"
+      }
+    },
+    "pii_columns": [
+      "customer_email",
+      "customer_phone"
+    ],
+    "tags": [
+      "Bronze",
+      "PII",
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        "FACT_SALES_SILVER (order_id, customer_id, product_category, total_amount, order_date, order_status, is_valid_transaction)"
+      ],
+      "column_mapping": {
+        "CAST(order_id AS INT)": "CAST(order_id AS INT)",
+        "CAST(customer_id AS INT)": "CAST(customer_id AS INT)",
+        "product_category": "product_category",
+        "CAST(amount AS DOUBLE)": "CAST(amount AS DOUBLE)",
+        "CAST(order_date AS DATE)": "CAST(order_date AS DATE)",
+        "COALESCE(status, 'Unknown')": "COALESCE(status, 'Unknown')",
+        "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END": "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Silver",
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        "FACT_SALES_SILVER (order_id, customer_id, customer_email, customer_phone, customer_name, product_category, total_amount, order_date, order_status, is_valid_transaction)"
+      ],
+      "column_mapping": {
+        "CAST(order_id AS INT)": "CAST(order_id AS INT)",
+        "CAST(customer_id AS INT)": "CAST(customer_id AS INT)",
+        "customer_email": "customer_email",
+        "customer_phone": "customer_phone",
+        "customer_name": "customer_name",
+        "product_category": "product_category",
+        "CAST(amount AS DOUBLE)": "CAST(amount AS DOUBLE)",
+        "CAST(order_date AS DATE)": "CAST(order_date AS DATE)",
+        "COALESCE(status, 'Unknown')": "COALESCE(status, 'Unknown')",
+        "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END": "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END"
+      }
+    },
+    "pii_columns": [
+      "customer_email",
+      "customer_phone"
+    ],
+    "tags": [
+      "Silver",
+      "PII",
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "DIM_SALES_SUMMARY_GOLD",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        "DIM_SALES_SUMMARY_GOLD (category, total_revenue, avg_order_value, order_count, completed_orders, last_updated)"
+      ],
+      "column_mapping": {
+        "product_category": "product_category",
+        "SUM(total_amount) AS total_revenue": "SUM(total_amount) AS total_revenue",
+        "AVG(total_amount) AS avg_order_value": "AVG(total_amount) AS avg_order_value",
+        "COUNT(order_id) AS order_count": "COUNT(order_id) AS order_count",
+        "SUM(CASE WHEN is_valid_transaction = TRUE THEN 1 ELSE 0 END) AS completed_orders": "SUM(CASE WHEN is_valid_transaction = TRUE THEN 1 ELSE 0 END) AS completed_orders",
+        "CURRENT_TIMESTAMP()": "CURRENT_TIMESTAMP()"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Gold",
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "@data_stage/sales_data.csv"
+      ],
+      "target_tables": [
+        "RAW_SALES_BRONZE"
+      ],
+      "column_mapping": {
+        "order_id": "order_id",
+        "customer_id": "customer_id",
+        "product_category /* customer_email, */ /* customer_phone, */ /* customer_name, */": "product_category /* customer_email, */ /* customer_phone, */ /* customer_name, */",
+        "amount": "amount",
+        "order_date": "order_date",
+        "status": "status"
+      }
+    },
+    "pii_columns": [
+      "product_category /* customer_email, */ /* customer_phone, */ /* customer_name, */",
+      "product_category /* customer_email, */ /* customer_phone, */ /* customer_name, */"
+    ],
+    "tags": [
+      "Bronze",
+      "PII",
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "@data_stage/sales_data.csv"
+      ],
+      "target_tables": [
+        "RAW_SALES_BRONZE"
+      ],
+      "column_mapping": {
+        "order_id": "order_id",
+        "customer_id": "customer_id",
+        "product_category /* customer_email, */ /* customer_phone, */ /* customer_name, */": "product_category /* customer_email, */ /* customer_phone, */ /* customer_name, */",
+        "amount": "amount",
+        "order_date": "order_date",
+        "status": "status"
+      }
+    },
+    "pii_columns": [
+      "product_category /* customer_email, */ /* customer_phone, */ /* customer_name, */",
+      "product_category /* customer_email, */ /* customer_phone, */ /* customer_name, */"
+    ],
+    "tags": [
+      "Bronze",
+      "PII",
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "@data_stage/sales_data.csv"
+      ],
+      "target_tables": [
+        "RAW_SALES_BRONZE"
+      ],
+      "column_mapping": {
+        "order_id": "order_id",
+        "customer_id": "customer_id",
+        "product_category": "product_category",
+        "amount": "amount",
+        "order_date": "order_date",
+        "status": "status"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Bronze",
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        "FACT_SALES_SILVER (order_id, customer_id, product_category, total_amount, order_date, order_status, is_valid_transaction)"
+      ],
+      "column_mapping": {
+        "CAST(order_id AS INT)": "CAST(order_id AS INT)",
+        "CAST(customer_id AS INT)": "CAST(customer_id AS INT)",
+        "customer_email": "customer_email",
+        "customer_phone": "customer_phone",
+        "customer_name": "customer_name",
+        "product_category": "product_category",
+        "CAST(amount AS DOUBLE)": "CAST(amount AS DOUBLE)",
+        "CAST(order_date AS DATE)": "CAST(order_date AS DATE)",
+        "COALESCE(status, 'Unknown')": "COALESCE(status, 'Unknown')",
+        "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END": "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END"
+      }
+    },
+    "pii_columns": [
+      "customer_email",
+      "customer_phone"
+    ],
+    "tags": [
+      "Silver",
+      "PII",
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        "FACT_SALES_SILVER (order_id, customer_id, product_category, total_amount, order_date, order_status, is_valid_transaction)"
+      ],
+      "column_mapping": {
+        "CAST(order_id AS INT)": "CAST(order_id AS INT)",
+        "CAST(customer_id AS INT)": "CAST(customer_id AS INT)",
+        "product_category": "product_category",
+        "CAST(amount AS DOUBLE)": "CAST(amount AS DOUBLE)",
+        "CAST(order_date AS DATE)": "CAST(order_date AS DATE)",
+        "COALESCE(status, 'Unknown')": "COALESCE(status, 'Unknown')",
+        "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END": "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Silver",
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "@data_stage/sales_data.csv"
+      ],
+      "target_tables": [
+        "RAW_SALES_BRONZE"
+      ],
+      "column_mapping": {
+        "order_id": "order_id",
+        "customer_id": "customer_id",
+        "product_category": "product_category",
+        "amount": "amount",
+        "order_date": "order_date",
+        "status": "status"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Bronze",
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        "FACT_SALES_SILVER (order_id, customer_id, product_category, total_amount, order_date, order_status, is_valid_transaction)"
+      ],
+      "column_mapping": {
+        "CAST(order_id AS INT)": "CAST(order_id AS INT)",
+        "CAST(customer_id AS INT)": "CAST(customer_id AS INT)",
+        "product_category": "product_category",
+        "CAST(amount AS DOUBLE)": "CAST(amount AS DOUBLE)",
+        "CAST(order_date AS DATE)": "CAST(order_date AS DATE)",
+        "COALESCE(status, 'Unknown')": "COALESCE(status, 'Unknown')",
+        "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END": "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Silver",
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "DIM_SALES_SUMMARY_GOLD",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        "DIM_SALES_SUMMARY_GOLD (category, total_revenue, avg_order_value, order_count, completed_orders, last_updated)"
+      ],
+      "column_mapping": {
+        "product_category": "product_category",
+        "SUM(total_amount) AS total_revenue": "SUM(total_amount) AS total_revenue",
+        "AVG(total_amount) AS avg_order_value": "AVG(total_amount) AS avg_order_value",
+        "COUNT(order_id) AS order_count": "COUNT(order_id) AS order_count",
+        "SUM(CASE WHEN is_valid_transaction = TRUE THEN 1 ELSE 0 END) AS completed_orders": "SUM(CASE WHEN is_valid_transaction = TRUE THEN 1 ELSE 0 END) AS completed_orders",
+        "CURRENT_TIMESTAMP()": "CURRENT_TIMESTAMP()"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Gold",
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        "FACT_SALES_SILVER (order_id, customer_id, product_category, total_amount, order_date, order_status, is_valid_transaction)"
+      ],
+      "column_mapping": {
+        "CAST(order_id AS INT)": "CAST(order_id AS INT)",
+        "CAST(customer_id AS INT)": "CAST(customer_id AS INT)",
+        "product_category": "product_category",
+        "CAST(amount AS DOUBLE)": "CAST(amount AS DOUBLE)",
+        "CAST(order_date AS DATE)": "CAST(order_date AS DATE)",
+        "COALESCE(status, 'Unknown')": "COALESCE(status, 'Unknown')",
+        "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END": "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Silver",
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "@data_stage/sales_data.csv"
+      ],
+      "target_tables": [
+        "RAW_SALES_BRONZE"
+      ],
+      "column_mapping": {
+        "order_id": "order_id",
+        "customer_id": "customer_id",
+        "product_category": "product_category",
+        "amount": "amount",
+        "order_date": "order_date",
+        "status": "status"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Bronze",
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        "FACT_SALES_SILVER (order_id, customer_id, product_category, total_amount, order_date, order_status, is_valid_transaction)"
+      ],
+      "column_mapping": {
+        "CAST(order_id AS INT)": "CAST(order_id AS INT)",
+        "CAST(customer_id AS INT)": "CAST(customer_id AS INT)",
+        "product_category": "product_category",
+        "CAST(amount AS DOUBLE)": "CAST(amount AS DOUBLE)",
+        "CAST(order_date AS DATE)": "CAST(order_date AS DATE)",
+        "COALESCE(status, 'Unknown')": "COALESCE(status, 'Unknown')",
+        "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END": "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Silver",
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "DIM_SALES_SUMMARY_GOLD",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        "DIM_SALES_SUMMARY_GOLD (category, total_revenue, avg_order_value, order_count, completed_orders, last_updated)"
+      ],
+      "column_mapping": {
+        "product_category": "product_category",
+        "SUM(total_amount) AS total_revenue": "SUM(total_amount) AS total_revenue",
+        "AVG(total_amount) AS avg_order_value": "AVG(total_amount) AS avg_order_value",
+        "COUNT(order_id) AS order_count": "COUNT(order_id) AS order_count",
+        "SUM(CASE WHEN is_valid_transaction = TRUE THEN 1 ELSE 0 END) AS completed_orders": "SUM(CASE WHEN is_valid_transaction = TRUE THEN 1 ELSE 0 END) AS completed_orders",
+        "CURRENT_TIMESTAMP()": "CURRENT_TIMESTAMP()"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Gold",
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "@data_stage/sales_data.csv"
+      ],
+      "target_tables": [
+        "RAW_SALES_BRONZE"
+      ],
+      "column_mapping": {
+        "order_id": "order_id",
+        "customer_id": "customer_id",
+        "product_category": "product_category",
+        "amount": "amount",
+        "order_date": "order_date",
+        "status": "status"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Bronze",
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "FACT_SALES_SILVER",
+        "WRONG_RAW_SALES_BRONZE"
+      ],
+      "target_tables": [
+        "FACT_SALES_SILVER (order_id, customer_id, product_category, total_amount, order_date, order_status, is_valid_transaction)"
+      ],
+      "column_mapping": {
+        "CAST(order_id AS INT)": "CAST(order_id AS INT)",
+        "CAST(customer_id AS INT)": "CAST(customer_id AS INT)",
+        "product_category": "product_category",
+        "CAST(amount AS DOUBLE)": "CAST(amount AS DOUBLE)",
+        "CAST(order_date AS DATE)": "CAST(order_date AS DATE)",
+        "COALESCE(status, 'Unknown')": "COALESCE(status, 'Unknown')",
+        "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END": "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Silver",
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "DIM_SALES_SUMMARY_GOLD",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        "DIM_SALES_SUMMARY_GOLD (category, total_revenue, avg_order_value, order_count, completed_orders, last_updated)"
+      ],
+      "column_mapping": {
+        "product_category": "product_category",
+        "SUM(total_amount) AS total_revenue": "SUM(total_amount) AS total_revenue",
+        "AVG(total_amount) AS avg_order_value": "AVG(total_amount) AS avg_order_value",
+        "COUNT(order_id) AS order_count": "COUNT(order_id) AS order_count",
+        "SUM(CASE WHEN is_valid_transaction = TRUE THEN 1 ELSE 0 END) AS completed_orders": "SUM(CASE WHEN is_valid_transaction = TRUE THEN 1 ELSE 0 END) AS completed_orders",
+        "CURRENT_TIMESTAMP()": "CURRENT_TIMESTAMP()"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Gold",
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "@data_stage/sales_data.csv"
+      ],
+      "target_tables": [
+        "RAW_SALES_BRONZE"
+      ],
+      "column_mapping": {
+        "order_id": "order_id",
+        "customer_id": "customer_id",
+        "product_category": "product_category",
+        "amount": "amount",
+        "order_date": "order_date",
+        "status": "status"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Bronze",
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        "FACT_SALES_SILVER (order_id, customer_id, product_category, total_amount, order_date, order_status, is_valid_transaction)"
+      ],
+      "column_mapping": {
+        "CAST(order_id AS INT)": "CAST(order_id AS INT)",
+        "CAST(customer_id AS INT)": "CAST(customer_id AS INT)",
+        "product_category": "product_category",
+        "CAST(amount AS DOUBLE)": "CAST(amount AS DOUBLE)",
+        "CAST(order_date AS DATE)": "CAST(order_date AS DATE)",
+        "COALESCE(status, 'Unknown')": "COALESCE(status, 'Unknown')",
+        "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END": "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Silver",
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "DIM_SALES_SUMMARY_GOLD",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        "DIM_SALES_SUMMARY_GOLD (category, total_revenue, avg_order_value, order_count, completed_orders, last_updated)"
+      ],
+      "column_mapping": {
+        "product_category": "product_category",
+        "SUM(total_amount) AS total_revenue": "SUM(total_amount) AS total_revenue",
+        "AVG(total_amount) AS avg_order_value": "AVG(total_amount) AS avg_order_value",
+        "COUNT(order_id) AS order_count": "COUNT(order_id) AS order_count",
+        "SUM(CASE WHEN is_valid_transaction = TRUE THEN 1 ELSE 0 END) AS completed_orders": "SUM(CASE WHEN is_valid_transaction = TRUE THEN 1 ELSE 0 END) AS completed_orders",
+        "CURRENT_TIMESTAMP()": "CURRENT_TIMESTAMP()"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Gold",
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "@data_stage/sales_data.csv"
+      ],
+      "target_tables": [
+        "RAW_SALES_BRONZE"
+      ],
+      "column_mapping": {
+        "order_id": "order_id",
+        "customer_id": "customer_id",
+        "product_category": "product_category",
+        "amount": "amount",
+        "order_date": "order_date",
+        "status": "status"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Bronze",
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        "FACT_SALES_SILVER (order_id, customer_id, product_category, total_amount, order_date, order_status, is_valid_transaction)"
+      ],
+      "column_mapping": {
+        "CAST(order_id AS INT)": "CAST(order_id AS INT)",
+        "CAST(customer_id AS INT)": "CAST(customer_id AS INT)",
+        "product_category": "product_category",
+        "CAST(amount AS DOUBLE)": "CAST(amount AS DOUBLE)",
+        "CAST(order_date AS DATE)": "CAST(order_date AS DATE)",
+        "COALESCE(status, 'Unknown')": "COALESCE(status, 'Unknown')",
+        "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END": "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Silver",
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "DIM_SALES_SUMMARY_GOLD",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        "DIM_SALES_SUMMARY_GOLD (category, total_revenue, avg_order_value, order_count, completed_orders, last_updated)"
+      ],
+      "column_mapping": {
+        "product_category": "product_category",
+        "SUM(total_amount) AS total_revenue": "SUM(total_amount) AS total_revenue",
+        "AVG(total_amount) AS avg_order_value": "AVG(total_amount) AS avg_order_value",
+        "COUNT(order_id) AS order_count": "COUNT(order_id) AS order_count",
+        "SUM(CASE WHEN is_valid_transaction = TRUE THEN 1 ELSE 0 END) AS completed_orders": "SUM(CASE WHEN is_valid_transaction = TRUE THEN 1 ELSE 0 END) AS completed_orders",
+        "CURRENT_TIMESTAMP()": "CURRENT_TIMESTAMP()"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Gold",
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "@data_stage/sales_data.csv"
+      ],
+      "target_tables": [
+        "RAW_SALES_BRONZE"
+      ],
+      "column_mapping": {
+        "order_id": "order_id",
+        "customer_id": "customer_id",
+        "product_category": "product_category",
+        "amount": "amount",
+        "order_date": "order_date",
+        "status": "status"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Bronze",
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "RAW_SALES_BRONZE",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        "FACT_SALES_SILVER (order_id, customer_id, product_category, total_amount, order_date, order_status, is_valid_transaction)"
+      ],
+      "column_mapping": {
+        "CAST(order_id AS INT)": "CAST(order_id AS INT)",
+        "CAST(customer_id AS INT)": "CAST(customer_id AS INT)",
+        "product_category": "product_category",
+        "CAST(amount AS DOUBLE)": "CAST(amount AS DOUBLE)",
+        "CAST(order_date AS DATE)": "CAST(order_date AS DATE)",
+        "COALESCE(status, 'Unknown')": "COALESCE(status, 'Unknown')",
+        "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END": "CASE WHEN status = 'Completed' THEN TRUE ELSE FALSE END"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Silver",
+      "Governed"
+    ]
+  },
+  {
+    "lineage": {
+      "source_tables": [
+        "DIM_SALES_SUMMARY_GOLD",
+        "FACT_SALES_SILVER"
+      ],
+      "target_tables": [
+        "DIM_SALES_SUMMARY_GOLD (category, total_revenue, avg_order_value, order_count, completed_orders, last_updated)"
+      ],
+      "column_mapping": {
+        "product_category": "product_category",
+        "SUM(total_amount) AS total_revenue": "SUM(total_amount) AS total_revenue",
+        "AVG(total_amount) AS avg_order_value": "AVG(total_amount) AS avg_order_value",
+        "COUNT(order_id) AS order_count": "COUNT(order_id) AS order_count",
+        "SUM(CASE WHEN is_valid_transaction = TRUE THEN 1 ELSE 0 END) AS completed_orders": "SUM(CASE WHEN is_valid_transaction = TRUE THEN 1 ELSE 0 END) AS completed_orders",
+        "CURRENT_TIMESTAMP()": "CURRENT_TIMESTAMP()"
+      }
+    },
+    "pii_columns": [],
+    "tags": [
+      "Gold",
+      "Governed"
+    ]
+  }
+]
