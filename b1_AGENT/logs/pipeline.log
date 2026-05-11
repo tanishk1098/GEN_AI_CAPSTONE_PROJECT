@@ -519,3 +519,61 @@
 2026-05-11 22:15:53,696 - INFO - RAW_SALES_BRONZE self-healing completed
 2026-05-11 22:15:53,696 - INFO - RAW_SALES_BRONZE validation completed with 123 issues
 2026-05-11 22:15:54,505 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 22:30:22,524 - INFO - Autonomous pipeline execution completed successfully
+2026-05-11 22:30:22,525 - INFO - Snowflake Connector for Python Version: 4.4.0, Python Version: 3.13.7, Platform: macOS-26.2-arm64-arm-64bit-Mach-O
+2026-05-11 22:30:22,525 - INFO - Connecting to GLOBAL Snowflake domain
+2026-05-11 22:30:30,933 - INFO - Autonomous pipeline execution completed successfully
+2026-05-11 22:30:30,936 - INFO - Snowflake Connector for Python Version: 4.4.0, Python Version: 3.13.7, Platform: macOS-26.2-arm64-arm-64bit-Mach-O
+2026-05-11 22:30:30,937 - INFO - Connecting to GLOBAL Snowflake domain
+2026-05-11 22:30:32,817 - INFO - Autonomous pipeline execution completed successfully
+2026-05-11 22:30:32,820 - INFO - Snowflake Connector for Python Version: 4.4.0, Python Version: 3.13.7, Platform: macOS-26.2-arm64-arm-64bit-Mach-O
+2026-05-11 22:30:32,821 - INFO - Connecting to GLOBAL Snowflake domain
+2026-05-11 22:30:33,465 - INFO - Snowflake Connector for Python Version: 4.4.0, Python Version: 3.13.7, Platform: macOS-26.2-arm64-arm-64bit-Mach-O
+2026-05-11 22:30:33,465 - INFO - Connecting to GLOBAL Snowflake domain
+2026-05-11 22:30:34,724 - INFO - DIM_SALES_SUMMARY_GOLD loaded successfully
+2026-05-11 22:30:34,739 - INFO - Snowflake Connector for Python Version: 4.4.0, Python Version: 3.13.7, Platform: macOS-26.2-arm64-arm-64bit-Mach-O
+2026-05-11 22:30:34,739 - INFO - Connecting to GLOBAL Snowflake domain
+2026-05-11 22:30:37,134 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 22:30:37,149 - INFO - DIM_SALES_SUMMARY_GOLD self-healing completed
+2026-05-11 22:30:37,149 - INFO - DIM_SALES_SUMMARY_GOLD validation completed with 0 issues
+2026-05-11 22:30:37,983 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 22:31:49,546 - INFO - Autonomous pipeline execution completed successfully
+2026-05-11 22:31:49,549 - INFO - Snowflake Connector for Python Version: 4.4.0, Python Version: 3.13.7, Platform: macOS-26.2-arm64-arm-64bit-Mach-O
+2026-05-11 22:31:49,549 - INFO - Connecting to GLOBAL Snowflake domain
+2026-05-11 22:35:25,769 - INFO - Autonomous pipeline execution completed successfully
+2026-05-11 22:35:25,770 - INFO - Snowflake Connector for Python Version: 4.4.0, Python Version: 3.13.7, Platform: macOS-26.2-arm64-arm-64bit-Mach-O
+2026-05-11 22:35:25,771 - INFO - Connecting to GLOBAL Snowflake domain
+2026-05-11 22:35:36,606 - INFO - Autonomous pipeline execution completed successfully
+2026-05-11 22:35:36,611 - INFO - Snowflake Connector for Python Version: 4.4.0, Python Version: 3.13.7, Platform: macOS-26.2-arm64-arm-64bit-Mach-O
+2026-05-11 22:35:36,614 - INFO - Connecting to GLOBAL Snowflake domain
+2026-05-11 22:35:37,555 - INFO - Autonomous pipeline execution completed successfully
+2026-05-11 22:35:37,579 - INFO - Snowflake Connector for Python Version: 4.4.0, Python Version: 3.13.7, Platform: macOS-26.2-arm64-arm-64bit-Mach-O
+2026-05-11 22:35:37,580 - INFO - Connecting to GLOBAL Snowflake domain
+2026-05-11 22:35:40,367 - INFO - Snowflake Connector for Python Version: 4.4.0, Python Version: 3.13.7, Platform: macOS-26.2-arm64-arm-64bit-Mach-O
+2026-05-11 22:35:40,368 - INFO - Connecting to GLOBAL Snowflake domain
+2026-05-11 22:35:41,437 - INFO - DIM_SALES_SUMMARY_GOLD loaded successfully
+2026-05-11 22:35:41,446 - INFO - Snowflake Connector for Python Version: 4.4.0, Python Version: 3.13.7, Platform: macOS-26.2-arm64-arm-64bit-Mach-O
+2026-05-11 22:35:41,446 - INFO - Connecting to GLOBAL Snowflake domain
+2026-05-11 22:35:42,765 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 22:35:42,789 - INFO - DIM_SALES_SUMMARY_GOLD self-healing completed
+2026-05-11 22:35:42,789 - INFO - DIM_SALES_SUMMARY_GOLD validation completed with 0 issues
+2026-05-11 22:35:42,791 - INFO - Snowflake Connector for Python Version: 4.4.0, Python Version: 3.13.7, Platform: macOS-26.2-arm64-arm-64bit-Mach-O
+2026-05-11 22:35:42,791 - INFO - Connecting to GLOBAL Snowflake domain
+2026-05-11 22:35:43,459 - INFO - FACT_SALES_SILVER loaded successfully
+2026-05-11 22:35:43,468 - INFO - Snowflake Connector for Python Version: 4.4.0, Python Version: 3.13.7, Platform: macOS-26.2-arm64-arm-64bit-Mach-O
+2026-05-11 22:35:43,469 - INFO - Connecting to GLOBAL Snowflake domain
+2026-05-11 22:35:44,927 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 22:35:44,937 - INFO - FACT_SALES_SILVER self-healing completed
+2026-05-11 22:35:44,937 - INFO - FACT_SALES_SILVER validation completed with 0 issues
+2026-05-11 22:35:44,946 - INFO - Snowflake Connector for Python Version: 4.4.0, Python Version: 3.13.7, Platform: macOS-26.2-arm64-arm-64bit-Mach-O
+2026-05-11 22:35:44,946 - INFO - Connecting to GLOBAL Snowflake domain
+2026-05-11 22:35:45,491 - INFO - RAW_SALES_BRONZE loaded successfully
+2026-05-11 22:35:45,496 - INFO - Snowflake Connector for Python Version: 4.4.0, Python Version: 3.13.7, Platform: macOS-26.2-arm64-arm-64bit-Mach-O
+2026-05-11 22:35:45,496 - INFO - Connecting to GLOBAL Snowflake domain
+2026-05-11 22:35:46,963 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 22:35:46,974 - INFO - RAW_SALES_BRONZE self-healing completed
+2026-05-11 22:35:46,974 - INFO - RAW_SALES_BRONZE validation completed with 123 issues
+2026-05-11 22:35:48,225 - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2026-05-11 22:37:58,057 - INFO - Autonomous pipeline execution completed successfully
+2026-05-11 22:37:58,058 - INFO - Snowflake Connector for Python Version: 4.4.0, Python Version: 3.13.7, Platform: macOS-26.2-arm64-arm-64bit-Mach-O
+2026-05-11 22:37:58,058 - INFO - Connecting to GLOBAL Snowflake domain
